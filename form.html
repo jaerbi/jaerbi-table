@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>form jaerbi</title>
+</head>
+
+<body>
+
+    <form action="https://formspree.io/jaerbi42@gmail.com" method="POST">
+        <input type="text" name="secret-cod" hidden value="secret">
+        <label>
+            Your name:
+            <input type="text" name="client-name" placeholder="Your name" requaired>
+        </label>
+
+        <br>
+        <label for="client-email">Your Email:</label>
+        <input id="client-email" type="email" name="client-email" placeholder="Your Email" requaired>
+        <br> 
+        <label>plate number
+            <input type="text" name="plate-number"  pattern="[A-Z]{2}[\d]{4}[A-Z]{2}"
+            title="AA1234BB" placeholder="AA1234BB">
+        </label>
+        
+        <br>
+        <input type="submit" value="send">
+        <input type="reset" value="reset">
+    </form>
+
+</body>
+
+</html>
